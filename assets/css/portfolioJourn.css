@@ -1,0 +1,125 @@
+section#one, #three{
+    background-color: rgba(255, 255, 255, .1);
+}
+
+
+.portfolio *{
+    box-sizing: border-box;
+}
+
+  .portfolio .row {
+    margin: 30px;
+    display: inline-block;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+    display: inline-block;
+
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33%;
+  }
+  
+  /* Clear floats after rows */
+  /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    display: inline-block;
+  } */
+  /* Content */
+  .portfolio .content {
+    background-color: white;
+    padding: 10px;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;}
+
+.portfolio .type{
+    float:left;
+    text-transform: uppercase;
+    color: #242943;
+    font-size: 1em;
+
+    margin:0px;
+}
+    
+.portfolio h4:not(.type){
+    float:none;
+    color:grey;
+    font-size: 1em;
+    text-align: right;
+    text-transform: uppercase;
+    margin:0px;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+.portfolio h3{
+    text-align: center;
+    color:#242943;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 1.4em;
+    margin-bottom: .2em;
+    
+    
+}
+.portfolio p {
+    float:none;
+    color:black; 
+    padding:10px;
+    font-size: .9em;
+    text-align:justify;
+
+  }
+
+
+.button.primary {
+    color: #ffffff;
+    box-shadow: none;
+    background-color: #242943;
+}
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+h3{
+    color: #15F4EE;
+}
+ul.skills-list{
+    grid-template-columns: repeat(2, minmax(340px, 400px));}
+
+ul.skills-list li{
+padding-left: px;
+-webkit-font-smoothing: antialiased;
+line-height: 2.5;
+font-variant: small-caps;
+font-weight: bold;
+margin-top:0;
+}
+
+ul.skills-list li::before{
+    font-size:30px;
+    position:relative; 
+    top:4px;
+    /* font-weight: bold; */
+    color:#ff073a;
+    margin-top:.5em;
+}
+ul date{
+    color:#ff073a;
+    font-size: .7em;
+}
+
